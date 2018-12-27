@@ -1,0 +1,12 @@
+fr/peaks/my_e_market/repository/UserRepository.class
+fr/peaks/my_e_market/controller/MarketController.class
+fr/peaks/my_e_market/service/UserService.class
+fr/peaks/my_e_market/controller/AbstractMarketControllerImpl.class
+fr/peaks/my_e_market/service/MarketService.class
+fr/peaks/my_e_market/repository/AbstractRepository.class
+fr/peaks/my_e_market/model/User.class
+fr/peaks/my_e_market/service/AbstractMarketServiceImpl.class
+fr/peaks/my_e_market/controller/UserController.class
+fr/peaks/my_e_market/service/AbstractService.class
+fr/peaks/my_e_market/BackendApp.class
+fr/peaks/my_e_market/model/AbstractId.class
