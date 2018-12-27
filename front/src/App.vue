@@ -1,11 +1,30 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/"></router-link>
+    <div id="app">
+        {{users}}
     </div>
-    <router-view/>
-  </div>
 </template>
-
 <style>
 </style>
+<script>
+    import {APIService} from "./services/APIService";
+
+    const apiService = new APIService();
+    export default {
+        components: {},
+        data() {
+            var users;
+            return {users};
+        },
+        methods: {
+            getContacts() {
+                apiService.getUsers().then((data) => {
+
+                    this.users = data.data;
+                });
+            },
+            mounted() {
+                this.getContacts();
+            },
+        },
+    }
+</script>

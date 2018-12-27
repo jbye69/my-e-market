@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/NavBar.vue'
 import SignIn from "./components/sign-in/SignIn";
+import NavBarView from "./views/NavBarView";
 
 Vue.use(Router);
 
@@ -10,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: NavBarView
     },{
       path: '/sign-in',
       name: 'sign-in',

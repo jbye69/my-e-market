@@ -1,47 +1,37 @@
 <template>
-    <div class="bg-contact2">
-        <div class="container-contact2">
-            <div class="wrap-contact2">
-                <form class="contact2-form validate-form">
-					<span class="contact2-form-title">
-						Contact Us
+        <div class="container-contact">
+            <div class="wrap-contact">
+                <form class="contact-form validate-form">
+                    <span class="contact-form-title">
+						Sign in
 					</span>
-
-                    <div class="wrap-input2 validate-input" data-validate="Name is required">
-                        <input class="input2" type="text" name="name">
-                        <span class="focus-input2" data-placeholder="NAME"></span>
+                    <div class="wrap-input validate-input" >
+                        <input class="input" type="name" name="name">
+                        <span class="focus-input" data-placeholder="NAME"></span>
                     </div>
-
-                    <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                        <input class="input2" type="text" name="email">
-                        <span class="focus-input2" data-placeholder="EMAIL"></span>
+                    <div class="wrap-input validate-input" >
+                        <input class="input" type="text" name="email">
+                        <span class="focus-input" data-placeholder="EMAIL"></span>
                     </div>
-
-                    <div class="wrap-input2 validate-input" data-validate = "Message is required">
-                        <textarea class="input2" name="message"></textarea>
-                        <span class="focus-input2" data-placeholder="MESSAGE"></span>
+                    <div class="wrap-input validate-input">
+                        <input type="password" class="input" name="password">
+                        <span class="focus-input" data-placeholder="PASSWORD"></span>
                     </div>
-
-                    <div class="container-contact2-form-btn">
-                        <div class="wrap-contact2-form-btn">
-                            <div class="contact2-form-bgbtn"></div>
-                            <button class="contact2-form-btn">
-                                Send Your Message
-                            </button>
+                    <div class="wrap-input validate-input">
+                        <input type="password" class="input" name="passwordConfirmation">
+                        <span class="focus-input" data-placeholder="PASSWORD CONFIRMATION"></span>
+                    </div>
+                    <div class="container-contact-form-btn">
+                        <div class="wrap-contact-form-btn">
+                            <div class="contact-form-bgbtn"></div>
+                            <button class="contact-form-btn">SAVE</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
 </template>
-
 <script>
-    export default {
-        name: "SignIn"
-    }
 </script>
-
-<style src="">
-
+<style scoped src="@/components/sign-in/css/main.css">
 </style>

@@ -7,40 +7,23 @@
             </div>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="https://www.peaks.fr/en/qui-sommes-nous/">About Peaks</a></li>
+                    <li><router-link to="/home"><a>Home</a></router-link></li>
+                    <li><a href="#">About Peaks</a></li>
                     <li><a href="https://www.peaks.fr/en/contact/">Contact</a></li>
-                    <li><a v-b-toggle.collapse1 variant="primaire">Sign - in</a></li>
+                    <li><a v-b-toggle.collapse1 variant="primaire">Sign-in</a></li>
                 </ul>
             </nav>
-        </div>
-        <div>
-            <b-collapse id="collapse1" class="mt-2">
-                <b-card>
-                    <SignIn/>
-                </b-card>
-            </b-collapse>
-            <div>
-                <!--To import an other component  ==> -->
-                <Home msg="Robert"/>
-            </div>
         </div>
     </div>
 </template>
 <script>
-    // @ is an alias to /src
-    //To import an other component
-    import Home from '@/components/home/Home.vue';
-    import SignIn from '@/components/sign-in/SignIn.vue';
+
     export default {
-        name: 'navBar',
+        name: 'NavBarView',
         components: {
-            Home,
-            SignIn
         },
         data() {
             return {
-                showCollapse: true
             }
         }
     };

@@ -5,9 +5,8 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Iterator;
-
 @Service
-public class AbstractMarketServiceImpl<T,ID> implements MarketService<T, ID> {
+public abstract class AbstractMarketServiceImpl<T,ID> implements MarketService<T, ID> {
 
     @Autowired
     private CrudRepository<T,ID> crudRepository;
@@ -41,4 +40,6 @@ public class AbstractMarketServiceImpl<T,ID> implements MarketService<T, ID> {
     public boolean exists(ID id) {
         return this.crudRepository.existsById(id);
     }
+
+
 }
