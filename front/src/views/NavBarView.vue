@@ -2,15 +2,16 @@
     <div class="navBar">
         <div class="header-inner">
             <div class="header-logo">
-                <img src="https://www.peaks.fr/wp-content/themes/peaks/assets/images/logo-peaks.svg"
-                     alt="" width="150" height="45">
+                <router-link to="/home"><img src="https://www.peaks.fr/wp-content/themes/peaks/assets/images/logo-peaks.svg"
+                                             alt="" width="150" height="45"></router-link>
             </div>
             <nav class="header-nav">
                 <ul>
-                    <li><router-link to="/home"><a>Home</a></router-link></li>
-                    <li><a href="#">About Peaks</a></li>
-                    <li><a href="https://www.peaks.fr/en/contact/">Contact</a></li>
-                    <li><a v-b-toggle.collapse1 variant="primaire">Sign-in</a></li>
+                    <li><router-link to="/products">Les Goodies</router-link></li>
+                    <li><router-link to="/cart">Panier</router-link></li>
+                    <li><router-link to="/acco">Compte</router-link></li>
+                    <li><router-link to="/sign-in">Sign-in</router-link></li>
+                    <li><router-link to="/idea">Une suggestion de Goodies?</router-link></li>
                 </ul>
             </nav>
         </div>
@@ -20,8 +21,6 @@
 
     export default {
         name: 'NavBarView',
-        components: {
-        },
         data() {
             return {
             }

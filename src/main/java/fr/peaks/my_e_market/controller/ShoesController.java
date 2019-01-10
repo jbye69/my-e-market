@@ -17,7 +17,7 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/user")
-public class UserController extends AbstractMarketControllerImpl<User, Long>{
+public class ShoesController extends AbstractMarketControllerImpl<User, Long>{
 
     @Autowired
     private UserServiceImpl serviceImpl;

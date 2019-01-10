@@ -34,12 +34,11 @@
 </template>
 
 <script>
-    import {APIService} from 'src/services/APIService';
-
-    const apiService = new APIService();
+    import store from '../store/UserStore';
 
     export default {
 
+        store: store,
         name: 'ListUsers',
 
         components: {
@@ -50,7 +49,6 @@
 
             return {
                 users: [],
-                numberOfUsers:0,
 
             };
 
@@ -58,16 +56,17 @@
 
         methods: {
 
-            getUsers(){
-                apiService.getUsers().then((data) => {
-                    this.users = data.data;
-                    this.numberOfUsers= data.count;
+        getUsers(){
+                apiService.getUsers().then(
+                    data => {
+                    console.log(" blablabla");
+                    this.users = data;
                 });
             },
         },
 
         mounted() {
-            this.getUsers();
+         this.getUsers();
         },
     }
 </script>
