@@ -1,17 +1,9 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Vuex from 'vuex'
 import router from './router'
-import { Modal } from 'bootstrap-vue/es/components';
-import { Scrollspy } from 'bootstrap-vue/es/directives';
-import { Collapse } from 'bootstrap-vue/es/components';
-Vue.use(Collapse);
-Vue.use(Scrollspy);
-Vue.use(Modal);
-Vue.config.productionTip = false;
+Vue.use(Vuex);
 
 new Vue({
     router,
-    render: h => h(App)
+    render: h => h(require('./App'))
 }).$mount('#app');
-
-
