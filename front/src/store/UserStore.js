@@ -1,5 +1,5 @@
 import Vuex from 'vuex';
-import
+import 
 const state = {
     APIService.
 }
